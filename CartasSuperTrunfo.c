@@ -1,22 +1,19 @@
 #include <stdio.h>
+#include <stdio.h>
+typedef struct {
+    char Estado;[30];
+    char Código da Carta;[10];
+    char Nome da Cidade;[50];
+    int População;[200000];
+    float Área;[1000.0];
+    float PIB;[50000.0];
+    int NDPT;[10];
+} Carta;
+#define NUM_CARTAS 3
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
-
-    return 0;
+Carta baralho[NUM_CARTAS] = {
+    {"SP", "001", "São Paulo", 12300000, 1500.0, 500000.0, 10},
+    {"RJ", "002", "Rio de Janeiro", 6748000, 1200.0, 300000.0, 8},
+    {"MG", "003", "Belo Horizonte", 2500000, 800.0, 200000.0, 5}
+};
 }
